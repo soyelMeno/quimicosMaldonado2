@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Propuesta de rotulación | Químicos Maldonado · TamizMás · DoMédica Integral</title>
+  <meta name="description" content="Cotización dinámica de letreros para tu fachada: letras 3D, iluminación e instalación. Arma tu propuesta y mira el total al instante.">
+  <meta name="theme-color" content="#0b2a3d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="topbar" id="topbar">
+    <div class="wrap topbar__inner">
+      <a href="#inicio" class="brand" aria-label="AC Letreros">
+        <span class="brand__mark">AC</span>
+        <span class="brand__text">Letreros</span>
+      </a>
+      <nav class="nav" aria-label="Secciones">
+        <a href="#letras">Letras 3D</a>
+        <a href="#instalacion">Instalación</a>
+        <a href="#resumen">Resumen</a>
+      </nav>
+      <a href="#resumen" class="btn btn--small">Ver mi total</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg">
+        <img data-img="hero" alt="Propuesta de fachada con letreros para Químicos Maldonado, TamizMás y DoMédica Integral">
+      </div>
+      <div class="wrap hero__content">
+        <p class="eyebrow">Propuesta exclusiva · Grupo de laboratorios</p>
+        <h1>Tres marcas. <span>Una fachada que se hace notar.</span></h1>
+        <p class="hero__lead">
+          Diseñamos una identidad visual en letras 3D para Químicos Maldonado, TamizMás y DoMédica Integral:
+          presencia, solidez y confianza desde la calle. Aquí armas tu propuesta a tu medida y ves el
+          total al instante.
+        </p>
+        <div class="hero__actions">
+          <a href="#letras" class="btn">Armar mi propuesta</a>
+          <a href="#resumen" class="btn btn--ghost">Ir al resumen</a>
+        </div>
+        <div class="hero__price" aria-live="polite">
+          <span>Inversión desde</span>
+          <strong data-desde>—</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 1: LETRAS 3D -->
+    <section class="section" id="letras">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="step">01</span>
+          <div>
+            <h2>Fabricación de letras 3D</h2>
+            <p>La base de tu propuesta: tres letreros, uno por cada marca.</p>
+          </div>
+        </header>
+
+        <div class="letras">
+          <figure class="frame">
+            <img data-img="letras" alt="Letras 3D de Químicos Maldonado, TamizMás y DoMédica Integral">
+          </figure>
+
+          <div class="letras__info">
+            <div class="price-tag">
+              <span>Paquete de letras 3D</span>
+              <strong data-precio-letras>—</strong>
+            </div>
+            <ul class="incisos" id="incisos"></ul>
+          </div>
+        </div>
+
+        <!-- Iluminación -->
+        <label class="toggle" id="toggleLuz">
+          <input type="checkbox" id="luz">
+          <span class="toggle__switch" aria-hidden="true"></span>
+          <span class="toggle__text">
+            <strong data-luz-titulo></strong>
+            <small data-luz-desc></small>
+          </span>
+          <span class="toggle__price" data-luz-precio>+ —</span>
+        </label>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: INSTALACIÓN -->
+    <section class="section section--alt" id="instalacion">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="step">02</span>
+          <div>
+            <h2>Elige tu instalación</h2>
+            <p>Cuatro niveles de presencia. Selecciona uno y mira cómo luce.</p>
+          </div>
+        </header>
+
+        <div class="install" id="install"></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: LETREROS DE ACRÍLICO -->
+    <section class="section" id="acrilico">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="step">03</span>
+          <div>
+            <h2>Letreros de acrílico <small class="tag">Opcional</small></h2>
+            <p data-acr-desc></p>
+          </div>
+        </header>
+
+        <div class="acrilico">
+          <figure class="frame">
+            <img data-img="acrilico" alt="Letreros de acrílico con letras de aluminio cepillado">
+          </figure>
+
+          <div class="acrilico__info">
+            <ul class="acr-list" id="acrilicoItems"></ul>
+
+            <label class="toggle" id="toggleLuzAcr">
+              <input type="checkbox" id="luzAcr" disabled>
+              <span class="toggle__switch" aria-hidden="true"></span>
+              <span class="toggle__text">
+                <strong data-acr-luz-titulo></strong>
+                <small data-acr-luz-desc></small>
+              </span>
+              <span class="toggle__price" data-acr-luz-precio>+ —</span>
+            </label>
+            <p class="acr__hint">Elige al menos un letrero para activar la iluminación.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUMEN -->
+    <section class="section section--alt" id="resumen">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="step">04</span>
+          <div>
+            <h2>Tu propuesta</h2>
+            <p>Esto es lo que has armado.</p>
+          </div>
+        </header>
+
+        <div class="summary">
+          <figure class="frame summary__img">
+            <img data-img-preview alt="Vista previa de la opción seleccionada">
+            <figcaption data-preview-caption></figcaption>
+          </figure>
+
+          <div class="summary__card">
+            <ul class="lines" id="lines"></ul>
+            <div class="total">
+              <span>Total</span>
+              <strong data-total>—</strong>
+            </div>
+            <a href="#" class="btn btn--wide" id="cta" target="_blank" rel="noopener">Solicitar esta propuesta por WhatsApp</a>
+            <p class="note" data-nota></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- BARRA FIJA MÓVIL -->
+  <div class="stickybar" id="stickybar">
+    <div>
+      <small>Total de tu propuesta</small>
+      <strong data-total>—</strong>
+    </div>
+    <a href="#resumen" class="btn btn--small">Ver resumen</a>
+  </div>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p><strong>AC Letreros</strong> · Fabricación e instalación de letreros</p>
+      <p class="footer__small">Propuesta preparada para Químicos Maldonado · TamizMás · DoMédica Integral</p>
+    </div>
+  </footer>
+
+  <!-- VISOR DE IMAGEN AMPLIADA -->
+  <dialog class="lightbox" id="lightbox" aria-label="Imagen ampliada">
+    <button type="button" class="lightbox__close" aria-label="Cerrar">✕</button>
+    <img alt="">
+    <p class="lightbox__cap"></p>
+  </dialog>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
